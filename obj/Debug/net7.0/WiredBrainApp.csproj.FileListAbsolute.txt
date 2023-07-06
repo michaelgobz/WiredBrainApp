@@ -1,0 +1,15 @@
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\WiredBrainApp.exe
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\WiredBrainApp.deps.json
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\WiredBrainApp.runtimeconfig.json
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\WiredBrainApp.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\WiredBrainApp.pdb
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.csproj.AssemblyReference.cache
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.AssemblyInfoInputs.cache
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.AssemblyInfo.cs
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.csproj.CoreCompileInputs.cache
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.dll
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\refint\WiredBrainApp.dll
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.pdb
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.genruntimeconfig.cache
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\ref\WiredBrainApp.dll
