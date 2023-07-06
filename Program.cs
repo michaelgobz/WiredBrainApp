@@ -6,7 +6,7 @@ namespace WiredBrainApp
 {
     public static class Program {
 
-        public static void Main (string args) {
+        public static void Main (string[] args) {
             var stack =  new SimpleStack();
             stack.Push(1.20);
             stack.Push(2.34);
