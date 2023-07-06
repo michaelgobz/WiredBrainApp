@@ -9,7 +9,7 @@ namespace WiredBrainApp
 
         public int count {
             get {
-                return _items.count;
+                return _items.Count;
             }
         }
         
@@ -17,7 +17,7 @@ namespace WiredBrainApp
         
         public void Push( double value) => _items[++_currentIndex] = value;
 
-        public double Pop (int index) => _items[_currentIndex--];
+        public double Pop () => _items[_currentIndex--];
         
 
     }
