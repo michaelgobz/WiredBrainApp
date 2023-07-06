@@ -8,14 +8,20 @@ namespace WiredBrainApp
 
         public static void Main (string[] args) {
             var stack =  new SimpleStack();
+            var sum = 0.0;
             stack.Push(1.20);
             stack.Push(2.34);
             stack.Push(4.5);
 
             while(stack.count > 0) 
             {
-                System.Console.WriteLine($"The value at {stack.count} is {stack.Pop()}");
+                double item =  stack.Pop();
+                System.Console.WriteLine($"The value at {stack.count} is {item}");
+                sum =+ item;
             }
+
+            System.Console.WriteLine($"The Sum of the Items is {sum}");
+            System.Console.ReadLine();
         }
     }
 }
