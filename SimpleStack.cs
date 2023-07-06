@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace WiredBrainApp
 {
@@ -9,7 +10,7 @@ namespace WiredBrainApp
 
         public int count {
             get {
-                return _items.Count;
+                return _items.Count();
             }
         }
         
