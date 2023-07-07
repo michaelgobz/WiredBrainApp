@@ -3,29 +3,32 @@ using System;
 namespace WiredBrainApp
 {
     public class Employee {
-        public int ID {
-            get;
-            set {
-
+        public int Id {
+            get {
+                return Id;
             }
         }
 
         public string FirstName {
-            get;
-            set{
+            get{
+                return FirstName;
 
+            }
+            set{
+                FirstName = value;
             }
         }
 
         public string LastName {
-            get;
+            get{
+                return LastName;
+            }
             set {
-
+                LastName = value;
             }
         }
 
         public Employee(string firstname , string lastname){
-            ID =  firstname.Length * lastname.Length;
             FirstName = firstname;
             LastName = lastname;
 
@@ -33,12 +36,8 @@ namespace WiredBrainApp
 
         public override string ToString()
         {
-            return $"ID: {ID} FirstName {FirstName} LastName {LastName}";
+            return $"ID: {Id} FirstName {FirstName} LastName {LastName}";
         }
 
-
     }
-
-
-    
 }
