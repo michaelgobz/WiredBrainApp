@@ -15,7 +15,7 @@ namespace WiredBrainApp
 
         private static void StackStrings()
         {
-            SimpleStack stack = new SimpleStack<String>();
+            SimpleStack<string> stack = new SimpleStack<String>();
             stack.Push("Michael Goboola");
             stack.Push("Nuwagaba Prudence Monica");
             stack.Push("Namugalu Nicole Maria");
@@ -56,7 +56,7 @@ namespace WiredBrainApp
             while (stack.Count > 0)
             {
                 var item = stack.Pop();
-                System.Console.WriteLine($"The value at {stack.count} is {item}");
+                System.Console.WriteLine($"The value at {stack.Count} is {item}");
                 sum += item;
             }
 
