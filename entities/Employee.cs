@@ -4,27 +4,23 @@ namespace WiredBrainApp
 {
     public class Employee {
         public int Id {
-            get {
-                return Id;
+            get { 
             }
         }
 
         public string FirstName {
             get{
-                return FirstName;
-
+                
             }
             set{
-                FirstName = value;
             }
         }
 
         public string LastName {
             get{
-                return LastName;
+                
             }
             set {
-                LastName = value;
             }
         }
 
