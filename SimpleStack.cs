@@ -3,22 +3,22 @@ using System.Linq;
 
 namespace WiredBrainApp
 {
-    public class SimpleStack
+    public class SimpleStack<Ttype>
     {
-        private readonly object[] _items;
+        private readonly Ttype[] _items;
         private int _currentIndex = -1;
 
-        public int count {
+        public int Count {
             get {
                 return _currentIndex + 1;
             }
         }
         
-        public SimpleStack() =>  _items = new object[20];
+        public SimpleStack() =>  _items = new Ttype[40];
         
-        public void Push( object value) => _items[++_currentIndex] = value;
+        public void Push( Ttype value) => _items[++_currentIndex] = value;
 
-        public object Pop () => _items[_currentIndex--];
+        public Ttype Pop () => _items[_currentIndex--];
         
 
     }
