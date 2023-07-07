@@ -5,7 +5,7 @@ namespace WiredBrainApp
 {
     public class SimpleStack
     {
-        private readonly double[] _items;
+        private readonly object[] _items;
         private int _currentIndex = -1;
 
         public int count {
@@ -14,11 +14,11 @@ namespace WiredBrainApp
             }
         }
         
-        public SimpleStack() =>  _items = new double[20];
+        public SimpleStack() =>  _items = new object[20];
         
-        public void Push( double value) => _items[++_currentIndex] = value;
+        public void Push( object value) => _items[++_currentIndex] = value;
 
-        public double Pop () => _items[_currentIndex--];
+        public object Pop () => _items[_currentIndex--];
         
 
     }
