@@ -10,7 +10,7 @@ namespace WiredBrainApp
 
         public int count {
             get {
-                return _items.Count();
+                return _currentIndex + 1;
             }
         }
         

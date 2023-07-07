@@ -12,8 +12,8 @@ namespace WiredBrainApp
             stack.Push(1.20);
             stack.Push(2.34);
             stack.Push(4.5);
-
-            while(stack.count > 0) 
+            
+            while(stack.count > 0)
             {
                 double item =  stack.Pop();
                 System.Console.WriteLine($"The value at {stack.count} is {item}");
