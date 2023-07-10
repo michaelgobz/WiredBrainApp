@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "1DbK78PyAHDTewhCCtH0S7ry3+wBN89NYp+0UT1FI9JIP1pKPpDjbjqNpwahbii3I7abQapp9nWLp2Dwu3Vugg==",
-  "success": true,
-  "projectFilePath": "D:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
+  "dgSpecHash": "W1ta3F9iQvTGs2fH6ginRpJjnvNoN2u/YsOwU+UZ0p44v3qD8e7JMV4G30d5c9dZEsR2kf4IrVvcnee3DfDnKA==",
+  "success": false,
+  "projectFilePath": "d:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.EntityFrameworkCore.InMemory"
+    }
+  ]
 }

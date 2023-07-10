@@ -1,8 +1,9 @@
 using System;
 
-namespace WiredBrainApp
+namespace WiredBrainApp.entities
 {
-    public class Organisation {
+    public class Organisation :IEntity 
+    {
         public int Id {
             get;
             set;

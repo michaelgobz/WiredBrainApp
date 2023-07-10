@@ -1,24 +1,27 @@
 using System;
 
-namespace WiredBrainApp
+namespace WiredBrainApp.entities
 {
-    public class Employee {
+    public class Employee : IEntity
+    {
         public int Id {
             get;
             set;
         }
-
-        public string FirstName {
+        public string FirstName
+        {
             get;
             set;
         }
 
-        public string LastName {
+        public string LastName
+        {
             get;
             set;
         }
 
-        public Employee(string firstname , string lastname){
+        public Employee(string firstname, string lastname)
+        {
             FirstName = firstname;
             LastName = lastname;
 
