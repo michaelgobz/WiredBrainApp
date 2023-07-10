@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj": {}
+    "d:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj": {}
   },
   "projects": {
-    "D:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj": {
+    "d:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
+        "projectUniqueName": "d:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
         "projectName": "WiredBrainApp",
-        "projectPath": "D:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
+        "projectPath": "d:\\Desktop_files\\projects\\WiredBrainApp\\WiredBrainApp.csproj",
         "packagesPath": "C:\\Users\\py\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop_files\\projects\\WiredBrainApp\\obj\\",
+        "outputPath": "d:\\Desktop_files\\projects\\WiredBrainApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\py\\AppData\\Roaming\\NuGet\\NuGet.Config"
