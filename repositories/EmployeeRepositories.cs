@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 
 namespace WiredBrainApp {
-    public class EmployeeRespository {
+    public class Respository<T> {
 
-        private readonly List<Employee> _employees = new List<Employee>();
+        private readonly List<T> _items = new List<T>();
 
-        public void Add(Employee employee){
-            _employees.Add(employee);
+        public void Add(T item){
+            _items.Add(item);
         }
 
         public void Save(){
-            foreach( var employee in _employees){
-                System.Console.WriteLine(employee);
+            foreach( var item in _items){
+                System.Console.WriteLine(item);
             }
         }
 
