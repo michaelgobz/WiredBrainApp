@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using WiredBrainApp.entities;
 
 namespace WiredBrainApp.Repositories {
-    public class ListRespository<T> : IRepository  where T : class, IEntity
+    public class ListRespository<T> : IRepository<T>  where T : class, IEntity
     {
 
         private readonly List<T> _items = new List<T>();

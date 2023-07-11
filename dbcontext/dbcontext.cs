@@ -7,12 +7,13 @@ namespace WiredBrainApp.Dbcontext
     {
         public DbSet<Employee> employees => Set<Employee>();
         public DbSet<Organisation> organisations => Set<Organisation>();
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseInMemoryDatabase("WiredBrainDb");
+        }
     }
 
-    protected override void onConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.onConfiguring(optionsBuilder);
-		optionsBuilder.UseInMemoryDatabase("WiredBrainDb");
-	}
-        
 }

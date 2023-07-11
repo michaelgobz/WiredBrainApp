@@ -28,3 +28,15 @@ C:\Users\Administrator\Source\Repos\michaelgobz\WiredBrainApp\obj\Debug\net7.0\r
 C:\Users\Administrator\Source\Repos\michaelgobz\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.pdb
 C:\Users\Administrator\Source\Repos\michaelgobz\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.genruntimeconfig.cache
 C:\Users\Administrator\Source\Repos\michaelgobz\WiredBrainApp\obj\Debug\net7.0\ref\WiredBrainApp.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\Desktop_files\projects\WiredBrainApp\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\Desktop_files\projects\WiredBrainApp\obj\Debug\net7.0\WiredBrainApp.csproj.CopyComplete

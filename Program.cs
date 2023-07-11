@@ -21,7 +21,7 @@ namespace WiredBrainApp.entities
             System.Console.ReadLine();
         }
 
-        private static void SetEmployees(IRepository<T> repository)
+        private static void SetEmployees(IRepository<Employee> repository)
         {
 
             // employees 
@@ -39,7 +39,7 @@ namespace WiredBrainApp.entities
             repository.Save();
         }
 
-        private static void SetOrganisations(IRepository<T> repository)
+        private static void SetOrganisations(IRepository<Organisation> repository)
         {
             var bck = new Organisation("Bishop Cipriano Kihangire", "Education");
             var motors = new Organisation("Kiira motors", "Automotive");
