@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System ;
+using WiredBrainApp.Repositories;
 
 namespace WiredBrainApp.entities
 {
@@ -8,11 +9,7 @@ namespace WiredBrainApp.entities
 
         public static void Main (string[] args)
         {
-            var utils = new Utils();
-           
-            utils.StackDoubles();
-            utils.StackStrings();
-
+            
             // repository
             SetEmployees();
 

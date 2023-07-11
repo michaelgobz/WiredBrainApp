@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using WiredBrainApp.entities;
 
-namespace WiredBrainApp {
-    public class ListRespository<T> where T : class, IEntity
+namespace WiredBrainApp.Repositories {
+    public class ListRespository<T> : IRepository  where T : class, IEntity
     {
 
         private readonly List<T> _items = new List<T>();

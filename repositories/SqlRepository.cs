@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using WiredBrainApp.entities;
 using WiredBrainApp.Dbcontext;
 
-namespace WiredBrainApp {
-    public class SqlRespository<T> where T : class, IEntity {
+namespace WiredBrainApp.Repositories {
+    public class SqlRespository<T> : IRepository where T : class, IEntity {
 
         private readonly Dbcontext _dbContext;
         private readonly DbSet<T> _dbSet;
