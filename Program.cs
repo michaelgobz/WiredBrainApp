@@ -9,11 +9,9 @@ namespace WiredBrainApp.entities
         public static void Main (string[] args)
         {
             var utils = new Utils();
-            /**
+           
             utils.StackDoubles();
             utils.StackStrings();
-            **/
-
 
             // repository
             SetEmployees();

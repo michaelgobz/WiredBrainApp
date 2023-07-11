@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WiredBrainApp
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Desktop_files\projects\WiredBrainApp\
+=======
+build_property.ProjectDir = C:\Users\Administrator\Source\Repos\michaelgobz\WiredBrainApp\
+>>>>>>> a725929276b920a7dfda11049b01eb8285e945fc
