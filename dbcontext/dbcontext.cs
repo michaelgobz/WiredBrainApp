@@ -13,5 +13,5 @@ namespace WiredBrainApp.Dbcontext
     {
 		optionsBuilder.UseInMemoryDatabase("database");
 	}
-
+        
 }
