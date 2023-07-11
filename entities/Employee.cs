@@ -20,9 +20,9 @@ namespace WiredBrainApp.entities
             set;
         }
 
-        public Employee(string firstname , string lastname){
-            FirstName = firstname;
-            LastName = lastname;
+        public Employee(string FirstName , string LastName){
+            this.FirstName = FirstName;
+            this.LastName = LastName;
 
         }
 

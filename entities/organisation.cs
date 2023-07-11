@@ -29,9 +29,9 @@ namespace WiredBrainApp.entities
             set;
         }
 
-        public Organisation(string name , string domain){
-            Name = name;
-            Domain = domain;
+        public Organisation(string Name , string Domain){
+            this.Name= Name;
+            this.Domain = Domain;
 
         }
 

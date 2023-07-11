@@ -34,7 +34,6 @@ namespace WiredBrainApp.Repositories
 
         public T GetItemById(int id)
         {
-
             return _dbSet.Find(id);
         }
     }
