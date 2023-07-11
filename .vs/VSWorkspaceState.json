@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\entities"
+    "\\entities",
+    "\\repositories"
   ],
-  "SelectedNode": "\\entities\\Employee.cs",
+  "SelectedNode": "\\repositories\\EmployeeRepositories.cs",
   "PreviewInSolutionExplorer": false
 }
