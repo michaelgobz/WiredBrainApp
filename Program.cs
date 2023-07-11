@@ -2,6 +2,7 @@
 
 using System ;
 using WiredBrainApp.Repositories;
+using WiredBrainApp.entities;
 
 namespace WiredBrainApp.entities
 {
@@ -10,19 +11,18 @@ namespace WiredBrainApp.entities
         public static void Main (string[] args)
         {
             
-            // repository
-            SetEmployees();
+            // repositories
 
-            // organisations
-
-            SetOrganisations();
+            ListRespository<Employee> employees = new ListRespository<Employee>();
+            ListRespository<Organisation> organisations = new ListRespository<Organisation>();
+            SetEmployees(employees);
+            SetOrganisations(organisations);
 
             System.Console.ReadLine();
         }
 
-        private static void SetEmployees()
+        private static void SetEmployees(IRepository<T> repository)
         {
-            ListRespository<Employee> employees = new ListRespository<Employee>();
 
             // employees 
             Employee michael = new Employee("Michael", "Goboola");
@@ -31,22 +31,21 @@ namespace WiredBrainApp.entities
             Employee drake = new Employee("Drake", "Akandwanaho");
             Employee moon = new Employee("Marvin", "Moon");
 
-            employees.Add(michael);
-            employees.Add(nicole);
-            employees.Add(moureen);
-            employees.Add(drake);
-            employees.Add(moon);
-            employees.Save();
+            repository.Add(michael);
+            repository.Add(nicole);
+            repository.Add(moureen);
+            repository.Add(drake);
+            repository.Add(moon);
+            repository.Save();
         }
 
-        private static void SetOrganisations()
+        private static void SetOrganisations(IRepository<T> repository)
         {
-            ListRespository<Organisation> organisations = new ListRespository<Organisation>();
             var bck = new Organisation("Bishop Cipriano Kihangire", "Education");
             var motors = new Organisation("Kiira motors", "Automotive");
-            organisations.Add(bck);
-            organisations.Add(motors);
-            organisations.Save();
+            repository.Add(bck);
+            repository.Add(motors);
+            repository.Save();
         }
     }
 }
