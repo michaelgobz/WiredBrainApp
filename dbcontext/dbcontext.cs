@@ -9,9 +9,10 @@ namespace WiredBrainApp.Dbcontext
         public DbSet<Organisation> organisations => Set<Organisation>();
     }
 
-    public override onConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void onConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-		optionsBuilder.UseInMemoryDatabase("database");
+        base.onConfiguring(optionsBuilder);
+		optionsBuilder.UseInMemoryDatabase("WiredBrainDb");
 	}
         
 }

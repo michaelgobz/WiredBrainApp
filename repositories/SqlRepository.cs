@@ -1,30 +1,36 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using WiredBrainApp.entities;
 using WiredBrainApp.Dbcontext;
 
 namespace WiredBrainApp {
-    public class SqlRespository<T> where T : IEntity {
+    public class SqlRespository<T> where T : class, IEntity {
 
-        private readonly List<T> _items = new List<T>();
+        private readonly Dbcontext _dbContext;
+        private readonly DbSet<T> _dbSet;
+
+        public SqlRespository(Dbcontext dbcontext)
+        {
+            _dbContext = dbcontext;
+            _dbSet = _dbContext.Set<T>();
+        }
 
         public void Add(T item){
-            _items.Add(item);
+            _dbSet.Add(item);
         }
 
         public void Save(){
-            foreach( var item in _items){
-                System.Console.WriteLine(item);
-            }
+           _dbContext.SaveChanges();
         }
 
         public void Remove(T item)
         {
-			_items.Remove(item);
+			_dbSet.Remove(item);
 		}
 
         public T GetItemById(int id)
         {
-            return _items.Find(id);
+            return _dbSet.Find(id);
         }
 
     }
