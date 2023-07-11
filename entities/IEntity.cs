@@ -1,6 +1,6 @@
 namespace WiredBrainApp.entities
 {
-    interface IEntity {
+    public interface IEntity {
         public int Id {
             get;
             set;
