@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using WiredBrainApp.entities;
-
+using System.Linq;
 namespace WiredBrainApp.Repositories {
     public class ListRespository<T> : IRepository<T>  where T : class, IEntity
     {
