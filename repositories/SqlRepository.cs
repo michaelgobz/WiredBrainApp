@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using WiredBrainApp.entities;
+using System.Linq;
 using WiredBrainApp.Dbcontext;
 
 namespace WiredBrainApp.Repositories
@@ -15,6 +16,10 @@ namespace WiredBrainApp.Repositories
         {
             _dbContext = dbcontext;
             _dbSet = _dbContext.Set<T>();
+        }
+
+        public IEnumerable<T> GetAll(){
+            return _dbSet.ToList();
         }
 
         public void Add(T item)

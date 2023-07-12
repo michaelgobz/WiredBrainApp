@@ -12,6 +12,10 @@ namespace WiredBrainApp.Repositories {
             _items.Add(item);
         }
 
+        public IEnumerable<T> GetAll(){
+            return _items.ToList();
+        }
+
         public void Save(){
             foreach( var item in _items){
                 System.Console.WriteLine(item);

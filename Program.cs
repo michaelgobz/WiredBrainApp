@@ -19,8 +19,17 @@ namespace WiredBrainApp.entities
             SqlRespository<Organisation> organisations = new SqlRespository<Organisation>(new DbStorageContext());
             SetEmployees(employees);
             SetOrganisations(organisations);
+            WriteToConsole(employees);
 
             System.Console.ReadLine();
+        }
+
+        private static void WriteToConsole(SqlRespository<Employee> employees)
+        {
+            var list = employees.GetAll();
+            foreach (var item in list){
+                System.Console.WriteLine(item);
+            }
         }
 
         private static void SetEmployees(IRepository<Employee> repository)
