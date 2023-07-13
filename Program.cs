@@ -15,8 +15,8 @@ namespace WiredBrainApp.entities
 
             // repositories
 
-            SqlRespository<IEntity> employees = new SqlRespository<Employee>(new DbStorageContext());
-            SqlRespository<IEntity> organisations = new SqlRespository<Organisation>(new DbStorageContext());
+            IRepository<Employee> employees = new IRepository<Employee>(new DbStorageContext());
+            IRepository<Organisation> organisations = new IEntity<Organisation>(new DbStorageContext());
             SetEmployees(employees);
             SetOrganisations(organisations);
             WriteToConsole(employees);
