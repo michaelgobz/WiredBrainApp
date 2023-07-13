@@ -9,8 +9,8 @@ namespace WiredBrainApp.Repositories
     }
 
     public interface IReadRepository<out T> {
-        public IEnumerable<T> GetAll();
-        public T GetItemById(int Id);
+        public IEnumerable<T>? GetAll();
+        public T? GetItemById(int Id);
     }
     public interface IRepository<T> : IReadRepository<T> , IWriteRepository<T> 
     where T : IEntity

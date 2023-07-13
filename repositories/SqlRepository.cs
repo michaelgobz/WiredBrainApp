@@ -18,7 +18,7 @@ namespace WiredBrainApp.Repositories
             _dbSet = _dbContext.Set<T>();
         }
 
-        public IEnumerable<T> GetAll(){
+        public IEnumerable<T>? GetAll(){
             return _dbSet.ToList();
         }
 
@@ -37,7 +37,7 @@ namespace WiredBrainApp.Repositories
             _dbSet.Remove(item);
         }
 
-        public T GetItemById(int id)
+        public T? GetItemById(int id)
         {
             return _dbSet.Find(id);
         }

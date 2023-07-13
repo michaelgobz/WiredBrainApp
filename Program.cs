@@ -26,10 +26,15 @@ namespace WiredBrainApp.entities
 
         private static void WriteToConsole(IReadRepository<IEntity> repository)
         {
-            var list = repository.GetAll();
-            foreach (var item in list){
+            IEnumerable<IEntity>? list = repository.GetAll();
+            if(list != null) {
+                foreach (var item in list){
                 System.Console.WriteLine(item);
+                }
+            } else {
+                System.Console.WriteLine($"You don't have anything in there");
             }
+            
         }
 
         private static void SetEmployees(IRepository<Employee> repository)

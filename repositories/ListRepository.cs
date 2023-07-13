@@ -12,7 +12,7 @@ namespace WiredBrainApp.Repositories {
             _items.Add(item);
         }
 
-        public IEnumerable<T> GetAll(){
+        public IEnumerable<T>? GetAll(){
             return _items.ToList();
         }
 
@@ -26,7 +26,7 @@ namespace WiredBrainApp.Repositories {
             _items.Remove(item);
         }
 
-        public T GetItemById(int id){
+        public T? GetItemById(int id){
 
             return _items.Single(item => item.Id == id);
         }
