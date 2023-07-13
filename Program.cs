@@ -20,6 +20,7 @@ namespace WiredBrainApp.entities
             SetEmployees(employees);
             SetOrganisations(organisations);
             WriteToConsole(employees);
+            WriteToConsole(organisations);
 
             System.Console.ReadLine();
         }
