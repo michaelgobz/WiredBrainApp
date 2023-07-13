@@ -15,8 +15,8 @@ namespace WiredBrainApp.entities
 
             // repositories
 
-            IRepository<Employee> employees = new IRepository<Employee>(new DbStorageContext());
-            IRepository<Organisation> organisations = new IEntity<Organisation>(new DbStorageContext());
+            SqlRespository<Employee> employees = new SqlRespository<Employee>(new DbStorageContext());
+            SqlRespository<Organisation> organisations = new SqlRespository<Organisation>(new DbStorageContext());
             SetEmployees(employees);
             SetOrganisations(organisations);
             WriteToConsole(employees);
@@ -32,7 +32,7 @@ namespace WiredBrainApp.entities
             }
         }
 
-        private static void SetEmployees(IRepository<IEntity> repository)
+        private static void SetEmployees(IRepository<Employee> repository)
         {
 
             // employees 
@@ -60,7 +60,7 @@ namespace WiredBrainApp.entities
             repository.Save();
         }
 
-        private static void SetOrganisations(IRepository<IEntity> repository)
+        private static void SetOrganisations(IRepository<Organisation> repository)
         {
             var bck = new Organisation("Bishop Cipriano Kihangire", "Education");
             var motors = new Organisation("Kiira motors", "Automotive");
